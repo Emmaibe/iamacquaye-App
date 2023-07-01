@@ -1,9 +1,20 @@
 import "../Info.css";
+import Bag from "../States/Bag";
+import { Routes, Route, Link } from "react-router-dom";
+import Header from "../Components/Header";
 
 function InfoPage() {
   return (
     <div>
-      <div class="container">
+      <Bag
+        children={
+          <Header
+            homeTag={<Link to="/">EMEKA ACQUAYE</Link>}
+            aboutTag={<Link to="/">WORK</Link>}
+          />
+        }
+      />
+      <div className="container">
         <section className="infoSection">
           <h1>
             Presently curious on how to craft identities systems that help
@@ -13,7 +24,7 @@ function InfoPage() {
 
         <hr />
 
-        <article class="twoColumns process">
+        <article class="twoColumns process info-article">
           <h2>Process</h2>
           <p>
             An Identity serves one major purpose; to Identify. Our approach is
@@ -28,7 +39,7 @@ function InfoPage() {
 
         <hr />
 
-        <article class="twoColumns">
+        <article class="twoColumns info-article">
           <h2>Services</h2>
           <div>
             <h3>Strategy</h3>
@@ -56,7 +67,7 @@ function InfoPage() {
 
         <figure>
           <img
-            src="https://res.cloudinary.com/dxrfj6vel/image/upload/v1684439364/Emeka_Acquaye_1_q1aazz.svg"
+            src="https://res.cloudinary.com/dxrfj6vel/image/upload/v1684670804/EA_aukc4d.png"
             alt=""
           />
           <div class="picture-tag">

@@ -157,10 +157,6 @@ h3 {
   margin-bottom: 1rem;
 }
 
-body {
-  background-color: #000;
-}
-
 main {
   background-color: var(--bg-color);
   /* max-width: 1425px; */
@@ -179,11 +175,11 @@ main {
   padding-bottom: 10rem;
 }
 
-article {
+.info-article {
   padding: 2rem 0 10rem 0;
 }
 
-article p {
+.info-article p {
   font-size: var(--fs-200);
 }
 
@@ -205,7 +201,7 @@ article p {
     line-height: 70px;
   }
 
-  article p {
+  .info-article p {
     font-size: var(--fs-200);
   }
 
@@ -217,7 +213,7 @@ article p {
   }
 
   .container {
-    max-width: 39em;
+    max-width: 38em;
     margin: auto;
     padding: 0 1rem;
   }
