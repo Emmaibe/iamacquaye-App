@@ -15,8 +15,8 @@
   --fs-300: 1.5625rem;
   --fs-400: 2.5rem;
   --fs-500: 3.125rem;
-  --fs-900: 5.625rem;
-  --fs-1500: 9.375rem;
+  --fs-900: 4rem;
+  --fs-1000: 5rem;
 }
 
 @font-face {
@@ -46,8 +46,8 @@
     --fs-300: 1.375rem;
     --fs-400: 1.875rem;
     --fs-500: 2.5rem;
-    --fs-900: 4.375rem;
-    --fs-1500: 5.375rem;
+    --fs-900: 4rem;
+    --fs-1000: 4.375rem;
   }
 }
 
@@ -93,6 +93,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: var(--txt-color);
+  font-size: var(--fs-200);
 }
 
 /* A elements that don't have a class get default styles */
@@ -125,87 +126,132 @@ svg {
   }
 }
 
+/* utility class */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+h1 {
+  font-family: var(--ff-300);
+  font-size: var(--fs-900);
+  line-height: 70px;
+}
+
+h2 {
+  font-family: var(--ff-300);
+  font-size: var(--fs-500);
+}
+
+h3 {
+  font-family: var(--ff-300);
+  font-size: var(--fs-300);
+  margin-bottom: 1rem;
+}
+
 body {
-  background-color: var(--bg-color);
+  background-color: #000;
 }
 
 main {
+  background-color: var(--bg-color);
   /* max-width: 1425px; */
   margin: auto;
 }
 
-.two-columns {
+.container {
+  max-width: 1295px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.infoSection {
+  max-width: 50rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+
+article {
+  padding: 2rem 0 10rem 0;
+}
+
+article p {
+  font-size: var(--fs-200);
+}
+
+.twoColumns {
   display: flex;
-  gap: 1.2rem;
+  gap: 40%;
   margin: 2.7rem 0;
+  line-height: 2rem;
+}
+
+.process {
+  gap: 41%;
 }
 
 @media (max-width: 50em) {
+  .infoSection h1 {
+    padding-top: 9.5rem;
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
+  article p {
+    font-size: var(--fs-200);
+  }
+
+  .twoColumns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2.7rem 0;
+  }
+
   .container {
     max-width: 39em;
     margin: auto;
     padding: 0 1rem;
   }
 
-  .two-columns {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+  .twoColumns p {
+    font-family: var(--ff-200);
   }
 
-  .footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .info .contact {
-    align-items: flex-start;
-  }
-
-  .footer .info {
-    align-items: flex-start;
-  }
-
-  .container .connect {
-    font-size: var(--fs-500);
-    padding-top: 2.1875rem;
-    padding-bottom: 3.6875rem;
+  figure .picture-tag {
+    font-size: var(--fs-100);
+    line-height: 0.8rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
   }
 }
 
-.connect {
-  font-family: var(--ff-300);
-  font-size: var(--fs-500);
-  text-align: center;
-  padding-top: 9.1875rem;
-  padding-bottom: 12.6875rem;
+figure {
+  margin: 4rem 0;
+  position: relative;
 }
 
-.footer {
-  font-family: var(--ff-200);
-  line-height: 1.7rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1.2rem;
-  /* max-width: 1240px; */
-  font-size: var(--fs-200);
-  max-width: 1295px;
-  margin: auto;
-  padding: 0 1rem;
-  padding-bottom: 7.8125rem;
+figure img {
+  max-height: 39.0881rem;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1.25rem;
+.picture-tag {
+  font-size: var(--fs-300);
+  line-height: 1rem;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 2.5rem;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.picture-tag h3 {
+  font-family: var(--ff-400);
 }

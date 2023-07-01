@@ -1,13 +1,9 @@
-function Header() {
+function Header(props) {
   return (
     <header>
       <nav>
-        <p>
-          <a href="#">EMEKA ACQUAYE</a>
-        </p>
-        <p class="primary-navigation">
-          <a href="about/info.html">INFO</a>
-        </p>
+        <p>{props.homeTag}</p>
+        <p class="primary-navigation">{props.aboutTag}</p>
         <button
           class="mobile-nav-toggle"
           aria-control="primary-navigation"
