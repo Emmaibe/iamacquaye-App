@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/iamacquaye-App/static/css/main.7fc6e00c.css",
+    "main.js": "/iamacquaye-App/static/js/main.8060a887.js",
+    "static/js/787.77bb7b6d.chunk.js": "/iamacquaye-App/static/js/787.77bb7b6d.chunk.js",
+    "static/media/PPNeueMontreal-Medium.otf": "/iamacquaye-App/static/media/PPNeueMontreal-Medium.b604bc34ed28cb1c20b3.otf",
+    "static/media/PPNeueMontreal-Bold.otf": "/iamacquaye-App/static/media/PPNeueMontreal-Bold.a5585efb70f888db7b5c.otf",
+    "static/media/PPNeueMontreal-Book.otf": "/iamacquaye-App/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
+    "static/media/PPNeueMontreal-Thin.otf": "/iamacquaye-App/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.otf",
+    "index.html": "/iamacquaye-App/index.html",
+    "main.7fc6e00c.css.map": "/iamacquaye-App/static/css/main.7fc6e00c.css.map",
+    "main.8060a887.js.map": "/iamacquaye-App/static/js/main.8060a887.js.map",
+    "787.77bb7b6d.chunk.js.map": "/iamacquaye-App/static/js/787.77bb7b6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fc6e00c.css",
+    "static/js/main.8060a887.js"
+  ]
+}
