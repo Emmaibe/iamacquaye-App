@@ -8,7 +8,7 @@ import Carousel from "../Components/Carousel";
 
 function HomePage() {
   return (
-    <>
+    <div>
       <Bag
         children={
           <Header
@@ -17,13 +17,13 @@ function HomePage() {
           />
         }
       />
-      <div className="container">
+      <div className="container2">
         <Bag children={<About />} />
 
         <Bag children={<CaseStudies />} />
       </div>
       <Carousel />
-    </>
+    </div>
   );
 }
 

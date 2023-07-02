@@ -188,8 +188,8 @@ nav p:first-of-type a:hover {
 }
 
 @media (max-width: 50em) {
-  .container {
-    max-width: 39em;
+  .container2 {
+    max-width: 38em;
     margin: auto;
     padding: 0 1rem;
   }
@@ -220,27 +220,23 @@ nav p:first-of-type a:hover {
   }
 
   .icon-hamburger {
+    transition: 0.3s;
     width: 3rem;
     height: 3rem;
   }
 
-  .icon-hamburger[data-invisible] {
-    /* display: none; */
+  .icon-hamburger-rotate {
     transform: rotate(-90deg);
     transition: 0.3s;
+    width: 3rem;
+    height: 3rem;
   }
 
   .icon-close {
     display: none;
   }
 
-  /* .icon-close[data-visible] {
-    display: block;
-  } */
-
   .primary-navigation {
-    display: none;
-
     position: absolute;
     top: 6rem;
     background-color: #000;
@@ -255,7 +251,11 @@ nav p:first-of-type a:hover {
     font-weight: var(--fw-500);
   }
 
-  .primary-navigation[data-visible] {
+  .pNav-invisible {
+    display: none;
+  }
+
+  .pNav-visible {
     display: block;
   }
 

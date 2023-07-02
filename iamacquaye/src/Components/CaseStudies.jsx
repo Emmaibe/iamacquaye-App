@@ -41,8 +41,8 @@ function CaseStudies() {
       "https://res.cloudinary.com/dxrfj6vel/image/upload/v1684451418/karotii_laimbw.jpg",
     renee:
       "https://res.cloudinary.com/dxrfj6vel/image/upload/v1684451419/renee_tttxel.jpg",
-    blox: "https://res.cloudinary.com/dxrfj6vel/image/upload/v1684519730/Blox_zltf0k.jpg",
-    geng: "https://res.cloudinary.com/dxrfj6vel/image/upload/v1684568522/Geng_lt4qom.jpg",
+    blox: "https://res.cloudinary.com/dxrfj6vel/image/upload/v1686775105/Blox_new_zinylz_h2tyla.png",
+    geng: "https://res.cloudinary.com/dxrfj6vel/image/upload/v1686775106/Geng_new_knbgxj_idngqk.png",
     eni: "https://res.cloudinary.com/dxrfj6vel/image/upload/v1684450857/eni_w0dzhk.jpg",
     being:
       "https://res.cloudinary.com/dxrfj6vel/image/upload/v1684450857/being_ub5gaw.jpg",
